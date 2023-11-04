@@ -21,6 +21,7 @@ public class AnaTest : MonoBehaviour
 
     private void movement()
     {
+        
         var input = Input.GetAxisRaw("Horizontal");
         var input2 = Input.GetAxisRaw("Vertical");
         rb2.velocity = new Vector2(input * speed, input2 * speed);

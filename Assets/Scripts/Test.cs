@@ -1,13 +1,44 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Test : MonoBehaviour
 {
-
-    private Rigidbody2D rb2d;
     [SerializeField] private float speed;
+
+
+    private int number1;
+    private float number2;
+    private bool tinaMeAma;
+    private string test;
+    private char c;
     
+    private string namePj;
+    private string pjClass;
+    private char pjSex;
+    
+    
+    private Rigidbody2D rb2d;
+    private SpriteRenderer sprite;
+
+
+    [SerializeField] private int test1;
+    public int test2;
+
+    private void Awake()
+    {
+        number1 = 1;
+        number2 = 2.56565f;
+        tinaMeAma = false;
+        test = "Tina i love u";
+        c = 't';
+
+        namePj = "Valentina";
+        pjClass = "Support impostor";
+        pjSex = 'F';
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,5 +55,10 @@ public class Test : MonoBehaviour
 
         rb2d.velocity = inputs * speed;
 
+    }
+
+    private void MovementPlayer()
+    {
+        
     }
 }

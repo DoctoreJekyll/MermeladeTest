@@ -16,9 +16,9 @@ namespace General
             FindSpriteRenderers();
         }
 
-        private void FindSpriteRenderers()
+        public void FindSpriteRenderers()
         {
-            spriteRenderersList.Clear();
+            ClearSpriteRendererList();            
 
             GameObject[] furnitureObjs = GameObject.FindGameObjectsWithTag("Furniture");
 
@@ -27,6 +27,11 @@ namespace General
                 SpriteRenderer spriteRenderer = furnitureObject.GetComponent<SpriteRenderer>();
                 spriteRenderersList.Add(spriteRenderer);
             }
+        }
+
+        private void ClearSpriteRendererList()
+        {
+            spriteRenderersList.Clear();
         }
 
         private void ClearRandomObjectFromList()

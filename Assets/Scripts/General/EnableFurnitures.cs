@@ -9,16 +9,16 @@ namespace General
 
         [SerializeField] private List<SpriteRenderer> furnitureContenedor = new List<SpriteRenderer>();
 
-        private void Update()
+        private void OnEnable()
         {
-            if (Input.GetKeyDown(KeyCode.G))
+            EnableFurnituresFunction();
+        }
+
+        private void EnableFurnituresFunction()
+        {
+            for (int i = 0; i < furnitureContenedor.Count; i++)
             {
-                Debug.Log("Activando movidas");
-                
-                for (int i = 0; i < furnitureContenedor.Count; i++)
-                {
-                    furnitureContenedor[i].enabled = true;
-                }
+                furnitureContenedor[i].enabled = true;
             }
         }
     }

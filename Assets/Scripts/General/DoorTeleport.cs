@@ -1,3 +1,4 @@
+using System;
 using GameEvents;
 using Player;
 using UnityEngine;
@@ -9,11 +10,13 @@ namespace General
 
         private GameObject playerObjToTeleport;
         private Transform playerNewLocation;
-
-        [SerializeField] private GameEvent doorEvent;
+        private ActiveDesactiveRooms activeDesactiveRooms;
+        
+        [SerializeField] private bool doorUsed;
 
         private void Start()
         {
+            activeDesactiveRooms = GetComponent<ActiveDesactiveRooms>();
             playerObjToTeleport = FindObjectOfType<PlayerMovement>().gameObject;
             playerNewLocation = this.gameObject.transform.GetChild(0);
         }
@@ -22,7 +25,7 @@ namespace General
         {
             if (col.CompareTag("Player"))
             {
-                doorEvent.Raise();
+                activeDesactiveRooms.ActiveDesactiveRoomsEvent();
                 playerObjToTeleport.transform.position = playerNewLocation.position;
             }
         }

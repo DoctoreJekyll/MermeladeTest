@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class Test : MonoBehaviour
@@ -48,7 +49,8 @@ public class Test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var inputsHorizontal = Input.GetAxisRaw("Horizontal");
+        float inputsHorizontal = Input.GetAxisRaw("Horizontal");
+        
         var inputsVertical = Input.GetAxisRaw("Vertical");
 
         var inputs = new Vector2(inputsHorizontal, inputsVertical).normalized;
@@ -59,6 +61,11 @@ public class Test : MonoBehaviour
 
     private void MovementPlayer()
     {
-        
+        TestGetAxis("Horizontal");
+    }
+
+    private void TestGetAxis(string name)
+    {
+        name = "test";
     }
 }

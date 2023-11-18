@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54d257cd36e821a46925cb84aa05804e, type: 3}
-  m_Name: TextTest
+  m_Name: KitchenTxt
   m_EditorClassIdentifier: 
-  dialogueText: "Es la llave de mi habitaci\xF3n. \xBFQue hace aqui?\n"
+  dialogueText: Es la llave de la cocina!

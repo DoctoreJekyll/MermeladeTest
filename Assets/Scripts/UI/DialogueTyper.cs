@@ -26,6 +26,8 @@ namespace UI
         
         IEnumerator DialogueTyping(string message)
         {
+            textObj.text = "";
+            
             foreach (var letter in message.ToCharArray())
             {
                 textObj.text += letter;

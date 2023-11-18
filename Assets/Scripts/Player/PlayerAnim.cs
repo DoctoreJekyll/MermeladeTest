@@ -1,4 +1,5 @@
 using System;
+using General;
 using UnityEngine;
 
 namespace Player
@@ -17,10 +18,17 @@ namespace Player
 
         private void Update()
         {
-            if (playerMovement.movementDirections.x != 0 || playerMovement.movementDirections.y != 0)
+            if (GameStatusController.instance.IsOnGameplay())
             {
-                animator.Play("Walk");
-            }
+                if (playerMovement.movementDirections.x != 0 || playerMovement.movementDirections.y != 0)
+                {
+                    animator.Play("Walk");
+                }
+                else
+                {
+                    animator.Play("Idle");
+                }
+            }              
             else
             {
                 animator.Play("Idle");

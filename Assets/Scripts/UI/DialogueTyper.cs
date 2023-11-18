@@ -34,7 +34,7 @@ namespace UI
                 yield return new WaitForSeconds(letterPauseTime);
             }
 
-            yield return new WaitForSeconds(0.25f);
+            yield return new WaitForSeconds(0.5f);
             GameStatusController.instance.ChangeGameStatusTo(GameStatusController.GameStatus.Gameplay);
             panelObj.SetActive(false);
         }

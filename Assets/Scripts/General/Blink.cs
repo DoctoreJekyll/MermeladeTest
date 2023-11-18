@@ -36,7 +36,7 @@ namespace General
 
         private void ResetBlinTime()
         {
-            waitToBlinkTime = 5f;
+            waitToBlinkTime = 3f;
         }
     }
 }

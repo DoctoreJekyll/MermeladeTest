@@ -1,4 +1,5 @@
 using System;
+using General;
 using UnityEngine;
 
 namespace Player
@@ -25,7 +26,14 @@ namespace Player
 
         private void FixedUpdate()
         {
-            PlayerMoveImprove();
+            if (GameStatusController.instance.IsOnGameplay())
+            {
+                PlayerMoveImprove();
+            }
+            else
+            {
+                rb2d.velocity = Vector2.zero;
+            }
         }
 
         private void PlayerInputsValue()

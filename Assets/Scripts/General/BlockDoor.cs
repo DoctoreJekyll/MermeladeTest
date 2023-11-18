@@ -1,18 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class BlockDoor : MonoBehaviour
+namespace General
 {
-    // Start is called before the first frame update
-    void Start()
+    public class BlockDoor : MonoBehaviour
     {
-        
-    }
+        private BoxCollider2D doorTrigger;
 
-    // Update is called once per frame
-    void Update()
-    {
+        [SerializeField] private GameObject necesaryObj;
         
+        // Start is called before the first frame update
+        void Start()
+        {
+            doorTrigger = GetComponent<BoxCollider2D>();
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            doorTrigger.enabled = !HisOBjIsActive();
+        }
+
+        private bool HisOBjIsActive()
+        {
+            return necesaryObj.activeSelf;
+        }
     }
 }

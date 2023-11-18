@@ -1,3 +1,4 @@
+using General;
 using UnityEngine;
 
 namespace Player
@@ -16,7 +17,20 @@ namespace Player
         // Update is called once per frame
         void Update()
         {
-            DirectionValue();
+            if (GameStatusController.instance.IsOnGameplay())
+            {
+                DirectionValue();
+                Flip();
+            }
+        }
+
+        private void DirectionValue()
+        {
+            direction.x = Input.GetAxisRaw("Horizontal");
+        }
+
+        private void Flip()
+        {
             if (direction.x >= 1)
             {
                 spriteRenderer.flipX = true;
@@ -25,11 +39,6 @@ namespace Player
             {
                 spriteRenderer.flipX = false;
             }
-        }
-
-        private void DirectionValue()
-        {
-            direction.x = Input.GetAxisRaw("Horizontal");
         }
     }
 }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4276878762512997075}
   - component: {fileID: 6365935141744172372}
   - component: {fileID: 7878833708266576824}
+  - component: {fileID: 1986474676364430972}
   m_Layer: 0
   m_Name: Fregadero
   m_TagString: Furniture
@@ -84,7 +85,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!61 &7878833708266576824
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -130,3 +131,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.27808, y: 1.636138}
   m_EdgeRadius: 0
+--- !u!114 &1986474676364430972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4737897450306941517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cda77c34f7468b546b228fcd220d7e89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add: {x: 2, y: 0}

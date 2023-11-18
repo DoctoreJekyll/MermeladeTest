@@ -8,7 +8,7 @@ namespace Player
     {
 
         private Rigidbody2D rb2d;
-        private Vector2 movementDirections;
+        public Vector2 movementDirections;
 
         [SerializeField] private float speed;
         [SerializeField] private float runAccelAmount;

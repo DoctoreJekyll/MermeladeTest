@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 namespace General
@@ -10,9 +11,10 @@ namespace General
 
         [SerializeField] private float waitToBlinkTime;
         
-        private void Start()
+        private IEnumerator Start()
         {
             anim = GetComponent<Animator>();
+            yield return new WaitForSeconds(0.75f);
             PlayBlink();
         }
 
@@ -36,7 +38,7 @@ namespace General
 
         private void ResetBlinTime()
         {
-            waitToBlinkTime = 3f;
+            waitToBlinkTime = 4f;
         }
     }
 }

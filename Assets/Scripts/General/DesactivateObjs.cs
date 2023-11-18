@@ -47,6 +47,7 @@ namespace General
         public void ClearSpriteWhenBlink()
         {
             ClearRandomObjectFromList();
+            ClearRandomObjectFromList();
         }
         
     }

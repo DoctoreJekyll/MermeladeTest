@@ -14,6 +14,7 @@ namespace General
         {
             if (col.gameObject.CompareTag("Player"))
             {
+                GameStatusController.instance.ChangeGameStatusTo(GameStatusController.GameStatus.Dialogue);
                 objToEnable.SetActive(true);
                 test.enabled = false;
             }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8413666497823342378}
   - component: {fileID: 8520681447519758522}
   - component: {fileID: 2686594389256060144}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MesaWapaLarga
   m_TagString: Furniture
   m_Icon: {fileID: 0}
@@ -74,17 +74,17 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 37d3efb57cf3d0140a82b33061bcdf98, type: 3}
+  m_Sprite: {fileID: -1277969166, guid: 37d3efb57cf3d0140a82b33061bcdf98, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 20.48, y: 20.48}
+  m_Size: {x: 2.856, y: 2.352}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!61 &2686594389256060144
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -117,16 +117,16 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.006751418, y: -0.006785035}
+  m_Offset: {x: 0.015093207, y: 0.9141872}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.096, y: 4.096}
-    newSize: {x: 20.48, y: 20.48}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2.856, y: 2.352}
+    newSize: {x: 2.856, y: 2.352}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.485348, y: 2.2957122}
+  m_Size: {x: 2.4657762, y: 1.5611537}
   m_EdgeRadius: 0

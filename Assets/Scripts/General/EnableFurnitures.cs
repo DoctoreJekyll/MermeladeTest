@@ -11,7 +11,16 @@ namespace General
 
         private void OnEnable()
         {
+            GetFurnitureChilds();
             EnableFurnituresFunction();
+        }
+
+        private void GetFurnitureChilds()
+        {
+            foreach (Transform child in this.gameObject.transform)
+            {
+                furnitureContenedor.Add(child.gameObject.GetComponent<SpriteRenderer>());
+            }
         }
 
         private void EnableFurnituresFunction()

@@ -12,7 +12,7 @@ namespace General
         private Transform playerNewLocation;
         private ActiveDesactiveRooms activeDesactiveRooms;
         
-        [SerializeField] private bool doorUsed;
+        [SerializeField] private GameObject necesaryObj;
 
         private void Start()
         {
@@ -23,7 +23,7 @@ namespace General
 
         private void OnTriggerEnter2D(Collider2D col)
         {
-            if (col.CompareTag("Player"))
+            if (col.CompareTag("Player") && !necesaryObj.activeSelf)
             {
                 activeDesactiveRooms.ActiveDesactiveRoomsEvent();
                 playerObjToTeleport.transform.position = playerNewLocation.position;

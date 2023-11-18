@@ -1,3 +1,5 @@
+using System;
+using UI;
 using UnityEngine;
 
 namespace General
@@ -7,22 +9,43 @@ namespace General
         private BoxCollider2D doorTrigger;
 
         [SerializeField] private GameObject necesaryObj;
+        [SerializeField] private bool doorIsBlock;
+
+        [SerializeField] private GameObject overlapObj;
+        [SerializeField] private Vector2 boxCheckSize;
+        [SerializeField] private LayerMask layerToCheckPlayer;
+        [SerializeField] private TextContenedor txt;
+        private DialogueTyper dialogueTyper;
         
         // Start is called before the first frame update
         void Start()
         {
-            doorTrigger = GetComponent<BoxCollider2D>();
+            dialogueTyper = FindObjectOfType<DialogueTyper>();
         }
 
         // Update is called once per frame
         void Update()
         {
-            doorTrigger.enabled = !HisOBjIsActive();
+            doorIsBlock = !HisOBjIsActive();
+        }
+
+        private void OnTriggerEnter2D(Collider2D col)
+        {
+            if (!doorIsBlock)
+            {
+                dialogueTyper.StartTextCorroutine(txt.dialogueText);
+            }
         }
 
         private bool HisOBjIsActive()
         {
             return necesaryObj.activeSelf;
+        }
+
+        private void OnDrawGizmosSelected()
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawCube(overlapObj.transform.position, boxCheckSize);
         }
     }
 }

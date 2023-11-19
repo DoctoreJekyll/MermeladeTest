@@ -9,6 +9,7 @@ namespace General
         private Vector2 initialPos;
         private Vector2 nextPos;
         [SerializeField] private Vector2 add;
+        [SerializeField] private float timeToDestiny = 2f;
         
         // Start is called before the first frame update
         void Start()
@@ -20,7 +21,7 @@ namespace General
 
         private void Movement()
         {
-            transform.DOMove(nextPos, 2f).SetEase(Ease.Linear).OnComplete(() =>
+            transform.DOMove(nextPos, timeToDestiny).SetEase(Ease.Linear).OnComplete(() =>
             {
                 (initialPos, nextPos) = (nextPos, initialPos);
                 Movement();

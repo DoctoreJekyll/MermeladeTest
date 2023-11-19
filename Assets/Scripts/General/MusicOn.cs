@@ -1,19 +1,37 @@
+using System.Collections;
 using UnityEngine;
 
 namespace General
 {
     public class MusicOn : MonoBehaviour
     {
-        // Start is called before the first frame update
+        private AudioSource aSource;
+        private float initVolume;
+        private float finalVolume;
+        
         void Start()
         {
-        
+            aSource = GetComponent<AudioSource>();
+            initVolume = aSource.volume;
+
+            aSource.volume = 0f;
         }
 
-        // Update is called once per frame
-        void Update()
+        public void StartFadeCorroutine()
         {
-        
+            aSource.enabled = true;
+            StartCoroutine(StartFadeMusic());
         }
+
+        IEnumerator StartFadeMusic()
+        {
+            while (aSource.volume < initVolume)
+            {
+                aSource.volume += 0.002f;
+                yield return new WaitForEndOfFrame();
+            }
+        }
+        
+
     }
 }

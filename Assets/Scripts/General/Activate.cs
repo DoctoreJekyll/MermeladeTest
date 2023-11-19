@@ -9,8 +9,8 @@ namespace General
         
         private void OnTriggerEnter2D(Collider2D col)
         {
-            AudioSource audioSource = musicObj.GetComponent<AudioSource>();
-            audioSource.enabled = true;
+            MusicOn audioSource = musicObj.GetComponent<MusicOn>();
+            audioSource.StartFadeCorroutine();
         }
     }
 }

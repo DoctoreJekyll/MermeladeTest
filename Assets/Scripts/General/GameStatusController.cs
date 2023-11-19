@@ -11,6 +11,8 @@ namespace General
 
         private void Awake()
         {
+            Time.timeScale = 1;
+            
             if (instance != null && instance != this)
             {
                 Destroy(this);

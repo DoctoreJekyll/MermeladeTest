@@ -12,8 +12,14 @@ namespace Enemy
         [SerializeField] private Transform newPlayerPos;
         [SerializeField] private Transform newEnemyPos;
         [SerializeField] private Animator fadeAnimator;
+        private ActiveDesactiveRooms test;
 
         private bool playerIsDead;
+
+        private void Start()
+        {
+            test = FindObjectOfType<ActiveDesactiveRooms>();
+        }
 
         private void Update()
         {
@@ -32,6 +38,7 @@ namespace Enemy
         {
             GameStatusController.instance.ChangeGameStatusTo(GameStatusController.GameStatus.None);
             fadeAnimator.Play("FadeInAnim");
+            test.ActiveDesactiveRoomsEvent();
             yield return new WaitForSeconds(1f);
             GameStatusController.instance.ActivateLastObj();
             playerIsDead = true;

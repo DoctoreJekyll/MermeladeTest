@@ -25,7 +25,7 @@ namespace Player
 
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                speed = 12;
+                speed = 15;
             }
             else if (Input.GetKeyUp(KeyCode.LeftShift))
             {

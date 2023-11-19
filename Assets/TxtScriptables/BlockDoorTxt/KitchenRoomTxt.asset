@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54d257cd36e821a46925cb84aa05804e, type: 3}
   m_Name: KitchenRoomTxt
   m_EditorClassIdentifier: 
-  dialogueText: La puerta de la cocina esta cerrada
+  dialogueText: "Que raro, la cocina sol\xEDa estar abierta, parece que hay algo
+    en la cerradura, necesito algo afilado para sacarlo y poder entrar."

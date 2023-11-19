@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54d257cd36e821a46925cb84aa05804e, type: 3}
   m_Name: DestornilladorTxt
   m_EditorClassIdentifier: 
-  dialogueText: 
+  dialogueText: "Un destornillador! Con esto podr\xE9 sacar lo que sea que est\xE9
+    atascado en la puerta de la cocina"

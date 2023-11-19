@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54d257cd36e821a46925cb84aa05804e, type: 3}
   m_Name: KeyTxt
   m_EditorClassIdentifier: 
-  dialogueText: 
+  dialogueText: "Es la... llave de mi habitaci\xF3n. \xBFQu\xE9 har\xE1 aqu\xED fuera?
+    Mi madre siempre la lleva consigo"

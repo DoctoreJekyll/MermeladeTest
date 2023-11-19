@@ -10,8 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54d257cd36e821a46925cb84aa05804e, type: 3}
-  m_Name: ExitTxt
+  m_Name: CatMomRoom
   m_EditorClassIdentifier: 
-  dialogueText: "Es la puerta por donde siempre salen y por donde entr\xF3 por primera
-    vez sardinilla una noche que se colo. Necesito salir de aqu\xED, esa llave debe
-    de estar en alguna parte."
+  dialogueText: Un lol o klk

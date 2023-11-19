@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54d257cd36e821a46925cb84aa05804e, type: 3}
   m_Name: CantBackTxt
   m_EditorClassIdentifier: 
-  dialogueText: No quiero volver
+  dialogueText: "No pienso volver ah\xED dentro. Nunca m\xE1s"

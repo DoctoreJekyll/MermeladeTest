@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54d257cd36e821a46925cb84aa05804e, type: 3}
   m_Name: MomRoomTxt
   m_EditorClassIdentifier: 
-  dialogueText: La puerta de mama esta cerrada
+  dialogueText: "\xBFQuien habr\xE1 puesto estas tablas? Necesito algo contundente
+    si quiero entrar aqu\xED."

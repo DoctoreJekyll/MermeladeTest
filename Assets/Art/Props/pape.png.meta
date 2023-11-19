@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5a99f87fe8b314b46a223672d5081db2
+guid: 397638339071ab14ab81eed6195f2707
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 400
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,28 +121,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: LaLlaveDeMiCorazon_8
-      rect:
-        serializedVersion: 2
-        x: 647
-        y: 719
-        width: 1382
-        height: 1584
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a368e06bc0f0a91408cdbad7949e873f
-      internalID: -1107235225
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -153,18 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      LaLlaveDeMiCorazon_0: -2000343025
-      LaLlaveDeMiCorazon_1: -1827811043
-      LaLlaveDeMiCorazon_10: 324617231
-      LaLlaveDeMiCorazon_2: -160862015
-      LaLlaveDeMiCorazon_3: -490186749
-      LaLlaveDeMiCorazon_4: 304165494
-      LaLlaveDeMiCorazon_5: -94412904
-      LaLlaveDeMiCorazon_6: 1931983818
-      LaLlaveDeMiCorazon_7: -1968886356
-      LaLlaveDeMiCorazon_8: -1107235225
-      LaLlaveDeMiCorazon_9: 1049510020
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

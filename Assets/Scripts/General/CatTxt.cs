@@ -35,8 +35,11 @@ namespace General
 
         private void OnTriggerEnter2D(Collider2D col)
         {
-            ActiveTxtPanel();
-            triggerEnter = true;
+            if (col.CompareTag("Player"))
+            {
+                ActiveTxtPanel();
+                triggerEnter = true;
+            }
         }
         
         private void ActiveTxtPanel()

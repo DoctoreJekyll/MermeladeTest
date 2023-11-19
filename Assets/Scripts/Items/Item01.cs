@@ -20,6 +20,7 @@ namespace Items
 
         private void OnTriggerEnter2D(Collider2D col)
         {
+            GameStatusController.instance.SetLastGameObj(this.gameObject);
             ActiveTxtPanel();
             aSource.PlayOneShot(aSource.clip);
             this.gameObject.SetActive(false);

@@ -35,6 +35,8 @@ namespace General
 
         public GameStatus gameStatus;
 
+        public GameObject lastGameObj;
+
         private void Start()
         {
             ChangeGameStatusTo(GameStatus.Gameplay);
@@ -48,6 +50,16 @@ namespace General
         public bool IsOnGameplay()
         {
             return gameStatus == GameStatus.Gameplay;
+        }
+
+        public void SetLastGameObj(GameObject gObj)
+        {
+            lastGameObj = gObj;
+        }
+
+        public void ActivateLastObj()
+        {
+            lastGameObj.SetActive(true);
         }
 
     }

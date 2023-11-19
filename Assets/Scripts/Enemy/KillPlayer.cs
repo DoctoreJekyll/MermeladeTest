@@ -33,6 +33,7 @@ namespace Enemy
             GameStatusController.instance.ChangeGameStatusTo(GameStatusController.GameStatus.None);
             fadeAnimator.Play("FadeInAnim");
             yield return new WaitForSeconds(1f);
+            GameStatusController.instance.ActivateLastObj();
             playerIsDead = true;
             player.transform.position = newPlayerPos.position;
             transform.position = newEnemyPos.position;

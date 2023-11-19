@@ -22,6 +22,15 @@ namespace Player
         private void Update()
         {
             PlayerInputsValue();
+
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                speed = 12;
+            }
+            else if (Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                speed = 6;
+            }
         }
 
         private void FixedUpdate()

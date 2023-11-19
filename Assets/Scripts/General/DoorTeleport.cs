@@ -11,11 +11,13 @@ namespace General
         private GameObject playerObjToTeleport;
         private Transform playerNewLocation;
         private ActiveDesactiveRooms activeDesactiveRooms;
+        private AudioSource aSource;
         
         [SerializeField] private GameObject necesaryObj;
 
         private void Start()
         {
+            aSource = GameObject.FindWithTag("Sound").GetComponent<AudioSource>();
             activeDesactiveRooms = GetComponent<ActiveDesactiveRooms>();
             playerObjToTeleport = FindObjectOfType<PlayerMovement>().gameObject;
             playerNewLocation = this.gameObject.transform.GetChild(0);
@@ -25,6 +27,7 @@ namespace General
         {
             if (col.CompareTag("Player") && !necesaryObj.activeSelf)
             {
+                aSource.PlayOneShot(aSource.clip);
                 activeDesactiveRooms.ActiveDesactiveRoomsEvent();
                 playerObjToTeleport.transform.position = playerNewLocation.position;
             }

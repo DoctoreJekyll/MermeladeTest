@@ -10,15 +10,18 @@ namespace Items
 
         [SerializeField] private TextContenedor txtInfo;
         private DialogueTyper dialogueTyper;
+        private AudioSource aSource;
 
         private void Start()
         {
             dialogueTyper = FindObjectOfType<DialogueTyper>();
+            aSource = GameObject.Find("PickItemSound").GetComponent<AudioSource>();
         }
 
         private void OnTriggerEnter2D(Collider2D col)
         {
             ActiveTxtPanel();
+            aSource.PlayOneShot(aSource.clip);
             this.gameObject.SetActive(false);
         }
 

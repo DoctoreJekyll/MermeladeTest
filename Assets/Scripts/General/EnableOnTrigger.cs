@@ -16,6 +16,7 @@ namespace General
             {
                 GameStatusController.instance.ChangeGameStatusTo(GameStatusController.GameStatus.Dialogue);
                 objToEnable.SetActive(true);
+                test.Play("Idle");
                 test.enabled = false;
             }
         }

@@ -27013,11 +27013,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5304151779742074266, guid: 19fba3e02fd82e64bb11a5bc4b8981dd, type: 3}
       propertyPath: speed
-      value: 15
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5304151779742074266, guid: 19fba3e02fd82e64bb11a5bc4b8981dd, type: 3}
       propertyPath: runAccelAmount
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5304151779742074266, guid: 19fba3e02fd82e64bb11a5bc4b8981dd, type: 3}
       propertyPath: runDeccelAmount

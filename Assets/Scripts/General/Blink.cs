@@ -21,12 +21,15 @@ namespace General
 
         private void Update()
         {
-            waitToBlinkTime -= Time.deltaTime;
-            
-            if (waitToBlinkTime <= 0)
+            if (GameStatusController.instance.IsOnGameplay())
             {
-                PlayBlink();
-                ResetBlinTime();
+                waitToBlinkTime -= Time.deltaTime;
+            
+                if (waitToBlinkTime <= 0)
+                {
+                    PlayBlink();
+                    ResetBlinTime();
+                }
             }
         }
 

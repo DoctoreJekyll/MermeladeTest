@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54d257cd36e821a46925cb84aa05804e, type: 3}
   m_Name: CatFinal
   m_EditorClassIdentifier: 
-  dialogueText: Un lol o klk
+  dialogueText: "Por fin despu\xE9s de 16 a\xF1os encerrada vamos a poder salir de
+    aqu\xED. No pienso volver ni dejar que nos atrapen."

@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54d257cd36e821a46925cb84aa05804e, type: 3}
   m_Name: FinalKeyTxt
   m_EditorClassIdentifier: 
-  dialogueText: 
+  dialogueText: "Esta llave... Es la llave para salir. Sabia que estaba aqu\xED.
+    Por fin, libertad..."

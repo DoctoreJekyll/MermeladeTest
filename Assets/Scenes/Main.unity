@@ -7769,7 +7769,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &641493622
 Transform:
   m_ObjectHideFlags: 0
@@ -13475,6 +13475,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 801955761}
     m_Modifications:
+    - target: {fileID: 192533262840904168, guid: 899831ea96ab10f4399d388ca714bf32, type: 3}
+      propertyPath: m_Size.x
+      value: 5.8115005
+      objectReference: {fileID: 0}
+    - target: {fileID: 192533262840904168, guid: 899831ea96ab10f4399d388ca714bf32, type: 3}
+      propertyPath: m_Size.y
+      value: 6.6641927
+      objectReference: {fileID: 0}
+    - target: {fileID: 192533262840904168, guid: 899831ea96ab10f4399d388ca714bf32, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.05649376
+      objectReference: {fileID: 0}
+    - target: {fileID: 192533262840904168, guid: 899831ea96ab10f4399d388ca714bf32, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.6687319
+      objectReference: {fileID: 0}
+    - target: {fileID: 192533262840904168, guid: 899831ea96ab10f4399d388ca714bf32, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 192533262840904168, guid: 899831ea96ab10f4399d388ca714bf32, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 16.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 192533262840904168, guid: 899831ea96ab10f4399d388ca714bf32, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 19.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 192533262840904168, guid: 899831ea96ab10f4399d388ca714bf32, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 5.2153845
+      objectReference: {fileID: 0}
+    - target: {fileID: 192533262840904168, guid: 899831ea96ab10f4399d388ca714bf32, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 6.0676923
+      objectReference: {fileID: 0}
     - target: {fileID: 2335214346494184467, guid: 899831ea96ab10f4399d388ca714bf32, type: 3}
       propertyPath: m_Name
       value: FinalKey
@@ -20706,7 +20742,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1840199282
 Transform:
   m_ObjectHideFlags: 0
